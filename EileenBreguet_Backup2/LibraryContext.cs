@@ -10,12 +10,12 @@ namespace LibraryApi
 {
     public class LibraryContext : DbContext
     {
-        public LibraryContext(DbContextOptions<LibraryContext> options) : base(options)
-        {
-
-        }
-
         public DbSet<Games> Games { get; set; }
         public DbSet<Charakters> Charakters { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=CharakterDB;Trusted_Connection=True");
+        }
+ 
     }
 }
