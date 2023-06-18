@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EileenBreguet_Backup2", "EileenBreguet_Backup2\EileenBreguet_Backup2.csproj", "{0FE0F439-2D2D-47F3-9423-756DAE4C47A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FE0F439-2D2D-47F3-9423-756DAE4C47A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FE0F439-2D2D-47F3-9423-756DAE4C47A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FE0F439-2D2D-47F3-9423-756DAE4C47A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FE0F439-2D2D-47F3-9423-756DAE4C47A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59FE2D36-1E28-4EBB-8754-D83962FDC2DE}
+	EndGlobalSection
+EndGlobal
