@@ -20,13 +20,13 @@ namespace EileenBreguet_Backup2.Controllers
             _db.Charakters.Add(charakter);
             _db.SaveChanges();
 
-            return CreatedAtAction("GetAllCharakters", new { id = charakter.id }, charakter);
+            return CreatedAtAction("GetAllCharakters", new { id = charakter.Id }, charakter);
         }
 
         [HttpGet]
         public IActionResult GetGame(int id)
         {
-            Charakters charakterFromDb = _db.Charakters.SingleOrDefault(b => b.id == id);
+            Charakters charakterFromDb = _db.Charakters.SingleOrDefault(b => b.Id == id);
 
             if (charakterFromDb == null)
             {
@@ -39,15 +39,15 @@ namespace EileenBreguet_Backup2.Controllers
         [HttpPut]
         public IActionResult UpdateGame(Charakters charakter)
         {
-            Charakters charakterFromDb = _db.Charakters.SingleOrDefault(b => b.id == charakter.id);
+            Charakters charakterFromDb = _db.Charakters.SingleOrDefault(b => b.Id == charakter.Id);
 
             if (charakterFromDb == null)
             {
                 return NotFound();
             }
 
-            charakterFromDb.name = charakter.name;
-            charakterFromDb.surename = charakter.surename;
+            charakterFromDb.Name = charakter.Name;
+            charakterFromDb.Surename = charakter.Surename;
 
             _db.SaveChanges();
 
@@ -58,7 +58,7 @@ namespace EileenBreguet_Backup2.Controllers
         [HttpDelete]
         public IActionResult DeleteGame(int id)
         {
-            Charakters charakterFromDb = _db.Charakters.SingleOrDefault(b => b.id == id);
+            Charakters charakterFromDb = _db.Charakters.SingleOrDefault(b => b.Id == id);
 
             if (charakterFromDb == null)
             {

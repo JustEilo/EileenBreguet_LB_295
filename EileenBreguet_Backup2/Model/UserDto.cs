@@ -7,6 +7,6 @@ namespace Eileen_Breguet_LB295.Model
         [Required]
         public  string Username { get; init; }
         [Required]
-        public  string Password { get; init; }
+       public  string Password { get; init; }
     }
 }

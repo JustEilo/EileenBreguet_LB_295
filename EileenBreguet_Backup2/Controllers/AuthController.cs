@@ -11,6 +11,7 @@ namespace EileenBreguet_Backup2.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
+        //Authentification and Register logic.
         public static User user = new User();
         private readonly IConfiguration _configuration;
 
@@ -18,7 +19,7 @@ namespace EileenBreguet_Backup2.Controllers
         {
             _configuration = configuration;
         }
-
+        //Request for register.
         [HttpPost("register")]
         public ActionResult<User> Register(UserDto request)
         {
@@ -30,7 +31,7 @@ namespace EileenBreguet_Backup2.Controllers
 
             return Ok(user);
         }
-
+        // Request for Login.
         [HttpPost("login")]
         public ActionResult<User> Login(UserDto request)
         {
@@ -48,7 +49,7 @@ namespace EileenBreguet_Backup2.Controllers
 
             return Ok(token);
         }
-
+        
         private string CreateToken(User user)
         {
             List<Claim> claims = new List<Claim> {
